@@ -1,0 +1,26 @@
+{
+  "name": "dbm",
+  "version": "0.1.0",
+  "description": "Database management",
+  "main": "dist/index.js",
+  "typings": "src/index.ts",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "start": "npm run dev",
+    "dev": "nodemon --exec ts-node -- ./src/dev.ts",
+    "build": "npm run clean; tsc -p ./tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "database",
+    "dynamodb"
+  ],
+  "author": "speed.of.lightt",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "0.0.0",
+    "nodemon": "^1.11.0",
+    "ts-node": "^1.7.0",
+    "typescript": "^2.0.10"
+  }
+}
