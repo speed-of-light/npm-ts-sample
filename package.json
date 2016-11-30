@@ -1,22 +1,21 @@
 {
-  "name": "dbm",
-  "version": "0.1.0",
-  "description": "Database management",
+  "name": "npm-ts-sample",
+  "version": "0.1.1",
+  "description": "npm ts dev seed module",
   "main": "dist/index.js",
   "typings": "src/index.ts",
   "scripts": {
+    "postinstall": "npm run build",
+    "prepublish": "npm run build",
     "clean": "rm -rf ./dist",
     "start": "npm run dev",
     "dev": "nodemon --exec ts-node -- ./src/dev.ts",
     "build": "npm run clean; tsc -p ./tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "database",
-    "dynamodb"
-  ],
-  "author": "speed.of.lightt",
-  "license": "ISC",
+  "keywords": [ ],
+  "author": "Speed-of-light<speed.of.lightt@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "0.0.0",
     "nodemon": "^1.11.0",
