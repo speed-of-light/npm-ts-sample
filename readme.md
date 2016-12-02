@@ -18,4 +18,8 @@ NPM+TS
 
 - profit
 
+## Tests
+
+`mocha -w --compilers ts:ts-node/register [DIR|*.ts]`
+
 ## Contributions are welcome

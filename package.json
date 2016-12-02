@@ -11,14 +11,20 @@
     "start": "npm run dev",
     "dev": "nodemon --exec ts-node -- ./src/dev.ts",
     "build": "npm run clean; tsc -p ./tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-live": "mocha -w --compilers ts:ts-node/register",
+    "t": "npm run test-live"
   },
   "keywords": [ ],
   "author": "Speed-of-light<speed.of.lightt@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "0.0.0",
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.33",
     "nodemon": "^1.11.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-typescript": "^1.0.11",
     "ts-node": "^1.7.0",
     "typescript": "^2.0.10"
   }
